@@ -1,0 +1,14 @@
+<main class="wrapper">
+  <section class="gallery">
+    <ul class="galleryList" *ngIf="filtFigLinks.length > 0">
+      <li class="media" *ngFor="let link of filtFigLinks">
+        <div class="letters-layer">
+          <p>Crochet</p>
+        </div>
+        <figure>
+          <img src={{link.link}} alt={{link.alt}}>
+        </figure>
+      </li>
+    </ul>
+  </section>
+</main>
